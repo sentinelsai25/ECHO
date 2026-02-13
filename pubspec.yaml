@@ -1,0 +1,77 @@
+name: echo
+description: Connection beyond Coverage
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # 🔥 device-to-device mesh
+  nearby_connections: ^4.3.0
+
+  # 📍 GPS
+  geolocator: ^14.0.2
+
+  # 🔋 battery
+  battery_plus: ^7.0.0
+
+  # 🔐 permissions
+  permission_handler: ^12.0.1
+
+  # 🆔 device id
+  uuid: ^4.2.1
+
+  # 🗺 navigation
+  url_launcher: ^6.2.5
+
+  # 🌐 connectivity & gateway
+  connectivity_plus: ^6.0.3
+  http: ^1.2.0
+
+  archive: ^3.6.1
+
+
+  # 🔔 notifications
+  flutter_local_notifications: ^17.2.2
+
+  # 💾 history
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # 🤳 shake detection
+  shake: ^2.2.0
+
+  # 🔐 encryption (NEW)
+  encrypt: ^5.0.1
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # ⭐ for app icon
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon.png
+
+# ⭐ FIX FOR GRADLE NAMESPACE ERROR
+dependency_overrides:
+  sensors_plus: ^5.0.1
+
+# ⭐ ICON CONFIGURATION
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
